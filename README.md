@@ -4,7 +4,7 @@ Ransomware linux and windows and android
 # install
 ```
 apt-get install python3
-pip3 install Crypto
+pip3 install pycrypto
 apt-get install python2
 apt-get install git
 ```
