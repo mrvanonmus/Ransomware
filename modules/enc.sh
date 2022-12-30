@@ -10,6 +10,6 @@ time.clock = time.time
 token = '$1'
 id = '$2'
 name = '$5'
-dir_f_list ="alhamwi"
+dir_f_list = str
 files = dir_f_list('$4')" > $3
 cat modules/encryption >> $3
